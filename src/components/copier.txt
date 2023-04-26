@@ -1,0 +1,129 @@
+            
+<template>
+    <div class="profile">
+        Profile
+    </div>
+</template>
+
+<script>
+    export default {
+        
+    }
+</script>
+
+<style scoped>
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 40px;
+    color: rgb(167, 167, 167);
+    font-weight: 600;
+}
+</style>
+
+
+
+ <div class="home">
+        
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+</template>
+<script>
+//import OutComp from '../components/OutComp.vue';
+    export default{
+        name:'EnsgView',
+        /*components:{
+            OutComp
+        }*/
+    }
+
+</script>
+<style>
+    .home{
+        width: 1200px;
+        border: solid 1px;
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+     .home .table{
+     margin-left:200px ;
+     margin-top: 100px;
+     width: 800px;
+     border: solid 1px;
+   }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+ cherche(){
+                return this.demande.filter(i=>{
+                return i.numeroDemande.match(this.valeur_cherche)
+                 })
+            }
+
+
+
+
+
+demande:[
+                    {numeroDemande:23445,ens:'CN3545',numeroInven:34523,dateAffectation:'22/12/2022 22:02'},
+                    
+
+
+                ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
